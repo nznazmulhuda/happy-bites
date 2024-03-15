@@ -1,0 +1,179 @@
+[
+	{
+		"recipe_id": 1,
+		"recipe_image": "https://example.com/recipe1.jpg",
+		"recipe_name": "Spicy Chicken Stir Fry",
+		"short_description": "A fiery and flavorful stir fry that will tantalize your taste buds.",
+		"ingredients": [
+			"2 chicken breasts, thinly sliced",
+			"1 red bell pepper, sliced",
+			"1 yellow bell pepper, sliced",
+			"1 onion, thinly sliced",
+			"3 cloves garlic, minced",
+			"2 tablespoons soy sauce",
+			"1 tablespoon sriracha sauce",
+			"1 tablespoon sesame oil",
+			"2 tablespoons vegetable oil",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "30 minutes",
+		"calories": 350
+	},
+	{
+		"recipe_id": 2,
+		"recipe_image": "https://example.com/recipe2.jpg",
+		"recipe_name": "Mushroom Risotto",
+		"short_description": "Creamy and comforting risotto with earthy mushrooms.",
+		"ingredients": [
+			"1 cup Arborio rice",
+			"1/2 cup dry white wine",
+			"4 cups vegetable broth",
+			"1 cup mushrooms, sliced",
+			"1 onion, finely chopped",
+			"2 cloves garlic, minced",
+			"1/4 cup grated Parmesan cheese",
+			"2 tablespoons butter",
+			"2 tablespoons olive oil",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "45 minutes",
+		"calories": 400
+	},
+	{
+		"recipe_id": 3,
+		"recipe_image": "https://example.com/recipe3.jpg",
+		"recipe_name": "Avocado Toast",
+		"short_description": "A simple yet delicious breakfast or snack option.",
+		"ingredients": [
+			"2 slices whole grain bread",
+			"1 ripe avocado",
+			"1 tablespoon lemon juice",
+			"1 teaspoon red pepper flakes",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "10 minutes",
+		"calories": 250
+	},
+	{
+		"recipe_id": 4,
+		"recipe_image": "https://example.com/recipe4.jpg",
+		"recipe_name": "Caprese Salad",
+		"short_description": "A classic Italian salad bursting with fresh flavors.",
+		"ingredients": [
+			"2 large tomatoes, sliced",
+			"8 oz fresh mozzarella cheese, sliced",
+			"1/4 cup fresh basil leaves",
+			"2 tablespoons balsamic glaze",
+			"2 tablespoons extra virgin olive oil",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "15 minutes",
+		"calories": 200
+	},
+	{
+		"recipe_id": 5,
+		"recipe_image": "https://example.com/recipe5.jpg",
+		"recipe_name": "Vegetable Curry",
+		"short_description": "A vibrant and aromatic curry loaded with colorful vegetables.",
+		"ingredients": [
+			"2 cups mixed vegetables (such as carrots, potatoes, peas)",
+			"1 onion, chopped",
+			"3 cloves garlic, minced",
+			"1 can coconut milk",
+			"2 tablespoons curry powder",
+			"1 tablespoon vegetable oil",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "40 minutes",
+		"calories": 300
+	},
+	{
+		"recipe_id": 6,
+		"recipe_image": "https://example.com/recipe6.jpg",
+		"recipe_name": "Quinoa Salad",
+		"short_description": "A nutritious and satisfying salad featuring protein-rich quinoa.",
+		"ingredients": [
+			"1 cup quinoa, cooked",
+			"1 cucumber, diced",
+			"1 bell pepper, diced",
+			"1/4 cup red onion, finely chopped",
+			"1/4 cup fresh parsley, chopped",
+			"2 tablespoons lemon juice",
+			"2 tablespoons olive oil",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "20 minutes",
+		"calories": 280
+	},
+	{
+		"recipe_id": 7,
+		"recipe_image": "https://example.com/recipe7.jpg",
+		"recipe_name": "Lemon Garlic Shrimp Pasta",
+		"short_description": "A zesty and savory pasta dish perfect for seafood lovers.",
+		"ingredients": [
+			"8 oz linguine pasta",
+			"1 lb shrimp, peeled and deveined",
+			"4 cloves garlic, minced",
+			"1 lemon, juiced and zested",
+			"1/4 cup fresh parsley, chopped",
+			"2 tablespoons olive oil",
+			"2 tablespoons butter",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "25 minutes",
+		"calories": 380
+	},
+	{
+		"recipe_id": 8,
+		"recipe_image": "https://example.com/recipe8.jpg",
+		"recipe_name": "Berry Smoothie Bowl",
+		"short_description": "A refreshing and nutritious smoothie bowl topped with fresh berries.",
+		"ingredients": [
+			"1 cup mixed berries (strawberries, blueberries, raspberries)",
+			"1 ripe banana",
+			"1/2 cup Greek yogurt",
+			"1/4 cup almond milk",
+			"2 tablespoons honey",
+			"2 tablespoons granola",
+			"1 tablespoon chia seeds"
+		],
+		"preparing_time": "10 minutes",
+		"calories": 220
+	},
+	{
+		"recipe_id": 9,
+		"recipe_image": "https://example.com/recipe9.jpg",
+		"recipe_name": "BBQ Pulled Jackfruit Sandwich",
+		"short_description": "A vegan twist on the classic pulled pork sandwich using jackfruit.",
+		"ingredients": [
+			"1 can young green jackfruit in brine",
+			"1/2 cup barbecue sauce",
+			"4 hamburger buns",
+			"1/4 cup coleslaw mix",
+			"1/4 cup vegan mayonnaise",
+			"1 tablespoon vegetable oil",
+			"Salt and pepper to taste"
+		],
+		"preparing_time": "35 minutes",
+		"calories": 320
+	},
+	{
+		"recipe_id": 10,
+		"recipe_image": "https://example.com/recipe10.jpg",
+		"recipe_name": "Chocolate Chip Cookies",
+		"short_description": "Classic homemade cookies loaded with gooey chocolate chips.",
+		"ingredients": [
+			"2 1/4 cups all-purpose flour",
+			"1 cup unsalted butter, softened",
+			"3/4 cup granulated sugar",
+			"3/4 cup brown sugar, packed",
+			"2 large eggs",
+			"1 teaspoon vanilla extract",
+			"1 teaspoon baking soda",
+			"1/2 teaspoon salt",
+			"2 cups semisweet chocolate chips"
+		],
+		"preparing_time": "25 minutes",
+		"calories": 150
+	}
+]
