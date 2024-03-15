@@ -11,6 +11,8 @@ function Header() {
 					</h1>
 				</div>
 
+				<div className="divider mx-4 flex lg:hidden"></div>
+
 				<nav>
 					<ul className="flex flex-wrap justify-center gap-5 lg:gap-12 items-center text-[#150B2BB2] text-[16px]">
 						<li className="cursor-pointer">Home</li>
@@ -20,7 +22,9 @@ function Header() {
 					</ul>
 				</nav>
 
-				<div className="search-field flex items-center justify-center gap-4">
+				<div className="divider mx-4 flex lg:hidden"></div>
+
+				<div className="search-field flex items-center justify-center lg:gap-4">
 					<div className="flex py-3 px-6 rounded-[50px] bg-[#150B2B0D] items-center gap-2">
 						<img
 							className="bg-transparent"
