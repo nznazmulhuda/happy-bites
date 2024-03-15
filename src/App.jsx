@@ -1,4 +1,4 @@
-import { Banner, Header } from "./Components";
+import { Banner, Header, OurRecipes } from "./Components";
 
 function App() {
 	return (
@@ -6,6 +6,7 @@ function App() {
 			<div className="container mx-auto mt-12">
 				<Header />
 				<Banner />
+				<OurRecipes />
 			</div>
 		</>
 	);
