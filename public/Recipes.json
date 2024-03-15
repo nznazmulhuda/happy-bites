@@ -1,7 +1,7 @@
 [
 	{
 		"recipe_id": 1,
-		"recipe_image": "https://example.com/recipe1.jpg",
+		"recipe_image": "../src/assets/spicy-chicken-stir-fry.jpg",
 		"recipe_name": "Spicy Chicken Stir Fry",
 		"short_description": "A fiery and flavorful stir fry that will tantalize your taste buds.",
 		"ingredients": [
@@ -21,7 +21,7 @@
 	},
 	{
 		"recipe_id": 2,
-		"recipe_image": "https://example.com/recipe2.jpg",
+		"recipe_image": "../src/assets/MushroomRisotto.jpeg",
 		"recipe_name": "Mushroom Risotto",
 		"short_description": "Creamy and comforting risotto with earthy mushrooms.",
 		"ingredients": [
@@ -41,7 +41,7 @@
 	},
 	{
 		"recipe_id": 3,
-		"recipe_image": "https://example.com/recipe3.jpg",
+		"recipe_image": "../src/assets/AvocadoToast.jpeg",
 		"recipe_name": "Avocado Toast",
 		"short_description": "A simple yet delicious breakfast or snack option.",
 		"ingredients": [
@@ -56,7 +56,7 @@
 	},
 	{
 		"recipe_id": 4,
-		"recipe_image": "https://example.com/recipe4.jpg",
+		"recipe_image": "../src/assets/CapreseSalad.jpeg",
 		"recipe_name": "Caprese Salad",
 		"short_description": "A classic Italian salad bursting with fresh flavors.",
 		"ingredients": [
@@ -72,7 +72,7 @@
 	},
 	{
 		"recipe_id": 5,
-		"recipe_image": "https://example.com/recipe5.jpg",
+		"recipe_image": "../src/assets/VegetableCurry.jpeg",
 		"recipe_name": "Vegetable Curry",
 		"short_description": "A vibrant and aromatic curry loaded with colorful vegetables.",
 		"ingredients": [
@@ -89,7 +89,7 @@
 	},
 	{
 		"recipe_id": 6,
-		"recipe_image": "https://example.com/recipe6.jpg",
+		"recipe_image": "../src/assets/QuinoaSalad.jpeg",
 		"recipe_name": "Quinoa Salad",
 		"short_description": "A nutritious and satisfying salad featuring protein-rich quinoa.",
 		"ingredients": [
@@ -107,7 +107,7 @@
 	},
 	{
 		"recipe_id": 7,
-		"recipe_image": "https://example.com/recipe7.jpg",
+		"recipe_image": "../src/assets/LemonGarlicShrimpPasta.jpg",
 		"recipe_name": "Lemon Garlic Shrimp Pasta",
 		"short_description": "A zesty and savory pasta dish perfect for seafood lovers.",
 		"ingredients": [
@@ -125,7 +125,7 @@
 	},
 	{
 		"recipe_id": 8,
-		"recipe_image": "https://example.com/recipe8.jpg",
+		"recipe_image": "../src/assets/BerrySmoothieBowl.jpeg",
 		"recipe_name": "Berry Smoothie Bowl",
 		"short_description": "A refreshing and nutritious smoothie bowl topped with fresh berries.",
 		"ingredients": [
@@ -142,7 +142,7 @@
 	},
 	{
 		"recipe_id": 9,
-		"recipe_image": "https://example.com/recipe9.jpg",
+		"recipe_image": "../src/assets/BBQPulledJackfruitSandwich.jpeg",
 		"recipe_name": "BBQ Pulled Jackfruit Sandwich",
 		"short_description": "A vegan twist on the classic pulled pork sandwich using jackfruit.",
 		"ingredients": [
@@ -159,7 +159,7 @@
 	},
 	{
 		"recipe_id": 10,
-		"recipe_image": "https://example.com/recipe10.jpg",
+		"recipe_image": "../src/assets/ChocolateChipCookies.jpg",
 		"recipe_name": "Chocolate Chip Cookies",
 		"short_description": "Classic homemade cookies loaded with gooey chocolate chips.",
 		"ingredients": [
