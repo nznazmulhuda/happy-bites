@@ -2,7 +2,13 @@ import CurrentCook from "./CurrentCook";
 import WantToCook from "./WantToCook";
 import PropTypes from "prop-types";
 
-function RecipeOrder({ order, handelCurrentCook, totalTime, cooking, totalCal }) {
+function RecipeOrder({
+	order,
+	handelCurrentCook,
+	totalTime,
+	cooking,
+	totalCal,
+}) {
 	return (
 		<div className="col-span-12 lg:col-span-4">
 			<div className="border border-[#28282833] rounded-2xl pb-8">
