@@ -68,7 +68,7 @@ function Header() {
 						</ul>
 					</div>
 
-					<div className="flex lg:hidden navbar-end text-xl font-bold text-[#150B2B]">
+					<div className="flex lg:hidden text-xl font-bold text-[#150B2B] navbar-end btn-ghost">
 						HappyBites
 					</div>
 

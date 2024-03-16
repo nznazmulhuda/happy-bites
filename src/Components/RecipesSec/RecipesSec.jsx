@@ -29,7 +29,7 @@ function RecipesSec() {
 
 	return (
 		<>
-			<div className="grid grid-cols-12 gap-6 mt-12">
+			<div className="grid container mx-auto grid-cols-12 gap-6 mt-5 lg:mt-14">
 				<Recipes handelWantToCook={handelWantToCook} />
 				<RecipeOrder
 					order={order}

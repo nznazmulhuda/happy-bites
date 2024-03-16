@@ -81,7 +81,7 @@ function RecipeOrder({
 					<div className="col-span-5"></div>
 
 					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3">
-						Total Time = <br /> {totalTime} min
+						Total Time <br /> = {totalTime} min
 					</h1>
 
 					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3">
