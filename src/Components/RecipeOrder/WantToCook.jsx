@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function WantToCook({ cart, id }) {
+function WantToCook({ cart, id, handelCurrentCook }) {
 	const { recipe_name, preparing_time, calories } = cart;
 	return (
 		<div className="grid grid-cols-12 gap-3 lg:gap-0 py-4 px-3 lg:px-6 bg-[#28282808]">
@@ -17,7 +17,10 @@ function WantToCook({ cart, id }) {
 				{calories} calories
 			</h1>
 			<div className="col-span-4 lg:col-span-3 flex items-center justify-center">
-				<button className="text-[#150B2B] text-sm lg:text-[16px] font-medium bg-[#0BE58A] py-1 lg:py-2 px-2 lg:px-4 rounded-[50px]">
+				<button
+					onClick={() => handelCurrentCook(cart)}
+					className="text-[#150B2B] text-sm lg:text-[16px] font-medium bg-[#0BE58A] py-1 lg:py-2 px-2 lg:px-4 rounded-[50px]"
+				>
 					Preparing
 				</button>
 			</div>
@@ -28,6 +31,7 @@ function WantToCook({ cart, id }) {
 WantToCook.propTypes = {
 	cart: PropTypes.object,
 	id: PropTypes.number,
+	handelCurrentCook: PropTypes.func,
 };
 
 export default WantToCook;

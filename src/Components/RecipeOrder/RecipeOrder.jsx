@@ -1,8 +1,19 @@
+import { useState } from "react";
 import CurrentCook from "./CurrentCook";
 import WantToCook from "./WantToCook";
 import PropTypes from "prop-types";
 
 function RecipeOrder({ order }) {
+	const [cooking, setCooking] = useState([]);
+	const [totalTime, setTotalTime] = useState(0);
+	const [totalCal, setTotalCal] = useState(0);
+
+	const handelCurrentCook = (data) => {
+		setTotalTime(totalTime + Number(data.preparing_time));
+		setTotalCal(totalCal + Number(data.calories));
+		setCooking([...cooking, data]);
+	};
+
 	return (
 		<div className="col-span-12 lg:col-span-4">
 			<div className="border border-[#28282833] rounded-2xl pb-8">
@@ -31,11 +42,16 @@ function RecipeOrder({ order }) {
 				</div>
 
 				{order.map((cart, id) => (
-					<WantToCook key={id} cart={cart} id={id + 1} />
+					<WantToCook
+						key={id}
+						cart={cart}
+						id={id + 1}
+						handelCurrentCook={handelCurrentCook}
+					/>
 				))}
 
 				<h1 className="mt-8 text-[#282828] text-2xl font-semibold text-center">
-					Currently cooking: 02
+					Currently cooking: {cooking.length}
 				</h1>
 
 				<div className="divider w-4/5 mx-auto mt-0"></div>
@@ -56,17 +72,19 @@ function RecipeOrder({ order }) {
 					</h1>
 				</div>
 
-				<CurrentCook />
+				{cooking.map((cook, id) => (
+					<CurrentCook key={id} cooking={cook} id={id + 1} />
+				))}
 
 				<div className="grid gap-2 lg:gap-3 grid-cols-12">
-					<div className="col-span-5 lg:col-span-6"></div>
+					<div className="col-span-5"></div>
 
-					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3 lg:col-span-3">
-						Total Time = 45 min
+					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3">
+						Total Time = <br /> {totalTime} min
 					</h1>
 
-					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3 lg:col-span-3">
-						Total Time = 45 min
+					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3">
+						Total Calories = {totalCal} calories
 					</h1>
 				</div>
 			</div>
