@@ -21,7 +21,7 @@ function WantToCook({ cart, id, handelCurrentCook }) {
 					onClick={() => {
 						handelCurrentCook(cart);
 					}}
-					className="text-[#150B2B] text-sm lg:text-[16px] font-medium bg-[#0BE58A] py-1 lg:py-2 px-2 lg:px-4 rounded-[50px]"
+					className="text-[#150B2B] text-sm lg:text-[16px] font-medium bg-[#0BE58A] hover:bg-[#02b76c] py-1 lg:py-2 px-2 lg:px-4 rounded-[50px]"
 				>
 					Preparing
 				</button>

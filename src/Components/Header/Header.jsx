@@ -46,8 +46,8 @@ function Header() {
 								</li>
 							</ul>
 						</div>
-						<a className="hidden lg:flex btn btn-ghost text-xl">
-							Recipe Calorise
+						<a className="hidden lg:flex btn btn-ghost text-3xl font-bold text-[#150B2B]">
+							HappyBites
 						</a>
 					</div>
 
@@ -68,12 +68,12 @@ function Header() {
 						</ul>
 					</div>
 
-					<div className="flex lg:hidden navbar-end text-xl">
-						Recipe Calorise
+					<div className="flex lg:hidden navbar-end text-xl font-bold text-[#150B2B]">
+						HappyBites
 					</div>
 
 					<div className="hidden lg:flex items-center navbar-end gap-3">
-						<div className="flex items-center gap-3 bg-[#150B2B0D] rounded-[50px] py-3 px-6 w-[50%]">
+						<div className="flex items-center gap-3 bg-[#150B2B0D] rounded-[50px] py-3 px-6 w-[50%] shadow-lg">
 							<img src={SearchIcon} alt="SearchIcon" />
 							<input
 								className="border-none outline-none bg-transparent w-[80%]"
@@ -87,9 +87,9 @@ function Header() {
 						</div>
 					</div>
 				</div>
-				<div className="navbar">
-					<div className="flex lg:hidden items-center justify-between mx-auto gap-3">
-						<div className="flex w-[50%] items-center gap-3 bg-[#150B2B0D] dark:bg-slate-500 rounded-[50px] py-3 px-3">
+				<div className="flex lg:hidden navbar">
+					<div className="items-center justify-between mx-auto gap-3">
+						<div className="flex w-[80%] items-center gap-3 bg-[#150B2B0D] rounded-[50px] py-3 px-3 shadow-lg">
 							<img src={SearchIcon} alt="SearchIcon" />
 							<input
 								className="border-none outline-none bg-transparent w-[80%]"

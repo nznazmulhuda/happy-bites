@@ -11,7 +11,7 @@ function RecipeOrder({
 }) {
 	return (
 		<div className="col-span-12 lg:col-span-4">
-			<div className="border border-[#28282833] rounded-2xl pb-8">
+			<div className="border border-[#28282833] rounded-2xl pb-8 shadow-lg">
 				<h1 className="mt-8 text-[#282828] text-2xl font-semibold text-center">
 					Want to cook: {order.length}
 				</h1>
@@ -35,6 +35,8 @@ function RecipeOrder({
 
 					<div className="col-span-2"></div>
 				</div>
+
+				<div className="divider mx-auto w-4/5 mt-0 mb-0"></div>
 
 				{order.map((cart, id) => (
 					<WantToCook
@@ -67,9 +69,13 @@ function RecipeOrder({
 					</h1>
 				</div>
 
+				<div className="divider mx-auto w-4/5 mt-0 mb-0"></div>
+
 				{cooking.map((cook, id) => (
 					<CurrentCook key={id} cooking={cook} id={id + 1} />
 				))}
+
+				<div className="divider mx-auto w-4/5 mt-0 mb-0"></div>
 
 				<div className="grid gap-2 lg:gap-3 grid-cols-12">
 					<div className="col-span-5"></div>

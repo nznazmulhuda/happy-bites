@@ -45,14 +45,14 @@ function Recipe({ RecipeCard, handelWantToCook }) {
 					<div className="divider"></div>
 
 					<div className="flex items-center gap-12">
-						<div className="flex gap-3 items-center">
+						<div className="flex gap-1 items-center">
 							<img src={Clock} alt="" />
 							<p className="text-[16px] font-fira text-[#282828CC]">
 								{preparing_time} min
 							</p>
 						</div>
 
-						<div className="flex gap-2 items-center">
+						<div className="flex gap-1 items-center">
 							<img src={Fire} alt="" />
 							<p className="text-[16px] font-fira text-[#282828CC]">
 								{calories} calories
@@ -60,10 +60,12 @@ function Recipe({ RecipeCard, handelWantToCook }) {
 						</div>
 					</div>
 
+					<div className="divider mb-0"></div>
+
 					<div className="card-actions">
 						<button
 							onClick={() => handelWantToCook(RecipeCard)}
-							className="bg-[#0BE58A] rounded-[50px] py-4 px-6 text-[#150B2B] text-lg font-medium mt-5"
+							className="bg-[#0BE58A]  hover:bg-[#02b76c] rounded-[50px] py-4 px-6 text-[#150B2B] text-lg font-medium hover:font-bold mt-5 shadow-xl border border-[#02b76c]"
 						>
 							Want to Cook
 						</button>
