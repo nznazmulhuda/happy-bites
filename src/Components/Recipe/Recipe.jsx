@@ -1,31 +1,46 @@
 import pic from "../../assets/spicy-chicken-stir-fry.jpg";
 import Clock from "../../assets/clock.png";
 import Fire from "../../assets/fire.png";
-function Recipe() {
+import PropTypes from "prop-types";
+
+function Recipe({ RecipeCard }) {
+	const {
+		recipe_image,
+		recipe_name,
+		short_description,
+		ingredients,
+		preparing_time,
+		calories,
+	} = RecipeCard;
+
 	return (
 		<>
 			<div className="card card-compact lg:p-6 bg-base-100 border border-[#28282833] shadow-xl">
 				<figure className="rounded-xl h-[40vh]">
-					<img src={pic} alt="Shoes" />
+					<img
+						className="w-full h-full"
+						src={recipe_image}
+						alt="Shoes"
+					/>
 				</figure>
 				<div className="card-body">
 					<h2 className="card-title text-[#282828] text-xl font-semibold">
-						Spaghetti Bolognese
+						{recipe_name}
 					</h2>
 					<p className="text-[#878787] font-fira text-[16px] leading-7">
-						Classic Italian pasta dish with savory meat sauce.
+						{short_description}
 					</p>
 
 					<div className="divider"></div>
 
 					<h2 className="card-title text-[#282828] text-lg font-medium">
-						Ingredients: 6
+						Ingredients: {ingredients.length}
 					</h2>
 
-					<ul className="text-[#878787] text-lg leading-8 font-fira list-disc pl-8"> 
-						<li>500g ground beef</li>
-						<li>500g ground beef</li>
-						<li>500g ground beef</li>
+					<ul className="text-[#878787] text-lg leading-8 font-fira list-disc pl-8">
+						{ingredients.map((ingredient, id) => (
+							<li key={id}>{ingredient}</li>
+						))}
 					</ul>
 
 					<div className="divider"></div>
@@ -34,14 +49,14 @@ function Recipe() {
 						<div className="flex gap-3 items-center">
 							<img src={Clock} alt="" />
 							<p className="text-[16px] font-fira text-[#282828CC]">
-								30 minutes
+								{preparing_time}
 							</p>
 						</div>
 
 						<div className="flex gap-2 items-center">
 							<img src={Fire} alt="" />
 							<p className="text-[16px] font-fira text-[#282828CC]">
-								600 calories
+								{calories} calories
 							</p>
 						</div>
 					</div>
@@ -56,5 +71,9 @@ function Recipe() {
 		</>
 	);
 }
+
+Recipe.propTypes = {
+	RecipeCard: PropTypes.object,
+};
 
 export default Recipe;
