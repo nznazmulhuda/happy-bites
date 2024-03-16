@@ -1,9 +1,8 @@
-import pic from "../../assets/spicy-chicken-stir-fry.jpg";
 import Clock from "../../assets/clock.png";
 import Fire from "../../assets/fire.png";
 import PropTypes from "prop-types";
 
-function Recipe({ RecipeCard }) {
+function Recipe({ RecipeCard, handelWantToCook }) {
 	const {
 		recipe_image,
 		recipe_name,
@@ -62,7 +61,10 @@ function Recipe({ RecipeCard }) {
 					</div>
 
 					<div className="card-actions">
-						<button className="bg-[#0BE58A] rounded-[50px] py-4 px-6 text-[#150B2B] text-lg font-medium mt-5">
+						<button
+							onClick={() => handelWantToCook(RecipeCard)}
+							className="bg-[#0BE58A] rounded-[50px] py-4 px-6 text-[#150B2B] text-lg font-medium mt-5"
+						>
 							Want to Cook
 						</button>
 					</div>
@@ -74,6 +76,7 @@ function Recipe({ RecipeCard }) {
 
 Recipe.propTypes = {
 	RecipeCard: PropTypes.object,
+	handelWantToCook: PropTypes.func,
 };
 
 export default Recipe;

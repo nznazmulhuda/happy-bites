@@ -1,4 +1,6 @@
 import { Banner, Header, OurRecipes, RecipesSec } from "./Components";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 	return (
@@ -6,9 +8,11 @@ function App() {
 			<div className="container mx-auto mt-12">
 				<Header />
 				<Banner />
-				<OurRecipes /> 
+				<OurRecipes />
 				<RecipesSec />
 			</div>
+
+			<ToastContainer />
 		</>
 	);
 }

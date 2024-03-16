@@ -1,12 +1,13 @@
 import CurrentCook from "./CurrentCook";
 import WantToCook from "./WantToCook";
+import PropTypes from "prop-types";
 
-function RecipeOrder() {
+function RecipeOrder({ order }) {
 	return (
 		<div className="col-span-12 lg:col-span-4">
 			<div className="border border-[#28282833] rounded-2xl pb-8">
 				<h1 className="mt-8 text-[#282828] text-2xl font-semibold text-center">
-					Want to cook: 01
+					Want to cook: {order.length}
 				</h1>
 
 				<div className="divider w-4/5 mx-auto mt-0"></div>
@@ -29,7 +30,9 @@ function RecipeOrder() {
 					<div className="col-span-2"></div>
 				</div>
 
-				<WantToCook />
+				{order.map((cart, id) => (
+					<WantToCook key={id} cart={cart} id={id + 1} />
+				))}
 
 				<h1 className="mt-8 text-[#282828] text-2xl font-semibold text-center">
 					Currently cooking: 02
@@ -61,7 +64,7 @@ function RecipeOrder() {
 					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3 lg:col-span-3">
 						Total Time = 45 min
 					</h1>
-					
+
 					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3 lg:col-span-3">
 						Total Time = 45 min
 					</h1>
@@ -70,5 +73,9 @@ function RecipeOrder() {
 		</div>
 	);
 }
+
+RecipeOrder.propTypes = {
+	order: PropTypes.array,
+};
 
 export default RecipeOrder;

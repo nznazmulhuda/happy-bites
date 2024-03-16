@@ -16,7 +16,7 @@
 			"2 tablespoons vegetable oil",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "30 minutes",
+		"preparing_time": "30",
 		"calories": 350
 	},
 	{
@@ -36,7 +36,7 @@
 			"2 tablespoons olive oil",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "45 minutes",
+		"preparing_time": "45",
 		"calories": 400
 	},
 	{
@@ -51,7 +51,7 @@
 			"1 teaspoon red pepper flakes",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "10 minutes",
+		"preparing_time": "10",
 		"calories": 250
 	},
 	{
@@ -67,7 +67,7 @@
 			"2 tablespoons extra virgin olive oil",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "15 minutes",
+		"preparing_time": "15",
 		"calories": 200
 	},
 	{
@@ -84,7 +84,7 @@
 			"1 tablespoon vegetable oil",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "40 minutes",
+		"preparing_time": "40",
 		"calories": 300
 	},
 	{
@@ -102,7 +102,7 @@
 			"2 tablespoons olive oil",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "20 minutes",
+		"preparing_time": "20",
 		"calories": 280
 	},
 	{
@@ -120,7 +120,7 @@
 			"2 tablespoons butter",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "25 minutes",
+		"preparing_time": "25",
 		"calories": 380
 	},
 	{
@@ -137,7 +137,7 @@
 			"2 tablespoons granola",
 			"1 tablespoon chia seeds"
 		],
-		"preparing_time": "10 minutes",
+		"preparing_time": "10",
 		"calories": 220
 	},
 	{
@@ -154,7 +154,7 @@
 			"1 tablespoon vegetable oil",
 			"Salt and pepper to taste"
 		],
-		"preparing_time": "35 minutes",
+		"preparing_time": "35",
 		"calories": 320
 	},
 	{
@@ -173,7 +173,7 @@
 			"1/2 teaspoon salt",
 			"2 cups semisweet chocolate chips"
 		],
-		"preparing_time": "25 minutes",
+		"preparing_time": "25",
 		"calories": 150
 	}
 ]
