@@ -1,19 +1,8 @@
-import { useState } from "react";
 import CurrentCook from "./CurrentCook";
 import WantToCook from "./WantToCook";
 import PropTypes from "prop-types";
 
-function RecipeOrder({ order }) {
-	const [cooking, setCooking] = useState([]);
-	const [totalTime, setTotalTime] = useState(0);
-	const [totalCal, setTotalCal] = useState(0);
-
-	const handelCurrentCook = (data) => {
-		setTotalTime(totalTime + Number(data.preparing_time));
-		setTotalCal(totalCal + Number(data.calories));
-		setCooking([...cooking, data]);
-	};
-
+function RecipeOrder({ order, handelCurrentCook, totalTime, cooking, totalCal }) {
 	return (
 		<div className="col-span-12 lg:col-span-4">
 			<div className="border border-[#28282833] rounded-2xl pb-8">
@@ -94,6 +83,10 @@ function RecipeOrder({ order }) {
 
 RecipeOrder.propTypes = {
 	order: PropTypes.array,
+	handelCurrentCook: PropTypes.func,
+	totalTime: PropTypes.number,
+	cooking: PropTypes.array,
+	totalCal: PropTypes.number,
 };
 
 export default RecipeOrder;
