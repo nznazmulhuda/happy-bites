@@ -4,7 +4,7 @@ import Fire from "../../assets/fire.png";
 function Recipe() {
 	return (
 		<>
-			<div className="card card-compact lg:p-6 bg-base-100 shadow-xl">
+			<div className="card card-compact lg:p-6 bg-base-100 border border-[#28282833] shadow-xl">
 				<figure className="rounded-xl h-[40vh]">
 					<img src={pic} alt="Shoes" />
 				</figure>
