@@ -48,7 +48,7 @@ function Recipe({ RecipeCard, handelWantToCook }) {
 						<div className="flex gap-3 items-center">
 							<img src={Clock} alt="" />
 							<p className="text-[16px] font-fira text-[#282828CC]">
-								{preparing_time}
+								{preparing_time} min
 							</p>
 						</div>
 

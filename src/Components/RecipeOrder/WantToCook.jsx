@@ -18,7 +18,9 @@ function WantToCook({ cart, id, handelCurrentCook }) {
 			</h1>
 			<div className="col-span-4 lg:col-span-3 flex items-center justify-center">
 				<button
-					onClick={() => handelCurrentCook(cart)}
+					onClick={() => {
+						handelCurrentCook(cart);
+					}}
 					className="text-[#150B2B] text-sm lg:text-[16px] font-medium bg-[#0BE58A] py-1 lg:py-2 px-2 lg:px-4 rounded-[50px]"
 				>
 					Preparing
