@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Clock from "../../assets/clock.png";
 import Fire from "../../assets/fire.png";
 import PropTypes from "prop-types";
 
 function Recipe({ RecipeCard, handelWantToCook }) {
+	const [quantitys, setQuantitys] = useState(1);
+
 	const {
 		recipe_image,
 		recipe_name,
@@ -10,11 +13,23 @@ function Recipe({ RecipeCard, handelWantToCook }) {
 		ingredients,
 		preparing_time,
 		calories,
+		recipe_id,
 	} = RecipeCard;
+
+	const recipe = {
+		recipe_image: recipe_image,
+		recipe_name: recipe_name,
+		short_description: short_description,
+		ingredients: ingredients,
+		preparing_time: preparing_time,
+		calories: calories,
+		quantitys: quantitys,
+		recipe_id: recipe_id,
+	};
 
 	return (
 		<>
-			<div className="card card-compact lg:p-6 bg-base-100 border border-[#28282833] shadow-xl">
+			<div className="card card-compact lg:p-6 bg-gray-100 border-2 border-[#1b0f614e] shadow-xl">
 				<figure className="rounded-xl h-[40vh]">
 					<img
 						className="w-full h-full"
@@ -62,13 +77,33 @@ function Recipe({ RecipeCard, handelWantToCook }) {
 
 					<div className="divider mb-0"></div>
 
-					<div className="card-actions">
+					<div className="card-actions grid lg:flex grid-cols-12 justify-between items-center">
 						<button
-							onClick={() => handelWantToCook(RecipeCard)}
-							className="bg-[#0BE58A]  hover:bg-[#02b76c] rounded-[50px] py-4 px-6 text-[#150B2B] text-lg font-medium hover:font-bold mt-5 shadow-xl border border-[#02b76c]"
+							onClick={() => {
+								handelWantToCook(recipe, RecipeCard);
+							}}
+							className="col-span-6 bg-[#0BE58A]  hover:bg-[#02b76c] rounded-[50px] py-2 lg:py-4 px-4 lg:px-6 text-[#150B2B] text-[12px] lg:text-lg font-medium mt-5 shadow-xl border border-[#02b76c]"
 						>
 							Want to Cook
 						</button>
+
+						<div className="col-span-6 flex lg:gap-1 items-center -mr-4 mt-4">
+							<button
+								onClick={() => setQuantitys(quantitys + 1)}
+								className="btn btn-ghost text-lg lg:text-2xl"
+							>
+								+
+							</button>
+							<h1 className="text-sm lg:text-xl border p-2 lg:p-3 rounded-xl">
+								x {quantitys > 0 ? quantitys : setQuantitys(1)}
+							</h1>
+							<button
+								onClick={() => setQuantitys(quantitys - 1)}
+								className="btn btn-ghost text-lg lg:text-2xl"
+							>
+								-
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -14,7 +14,7 @@ function Recipes({ handelWantToCook }) {
 
 	return (
 		<>
-			<div className="col-span-12 lg:col-span-8 grid gap-6 lg:grid-cols-2">
+			<div className="col-span-12 lg:col-span-7 grid gap-6 lg:grid-cols-2">
 				{Recipes.map((RecipeCard) => (
 					<Recipe
 						key={RecipeCard.recipe_id}

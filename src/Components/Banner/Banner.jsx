@@ -3,7 +3,7 @@ import "./Banner.css";
 function Banner() {
 	return (
 		<>
-			<div className="banner p-5 lg:py-[130px] lg:px-[212px] flex flex-col items-center justify-center gap-2 lg:gap-6">
+			<div className="banner p-5 lg:py-[130px] lg:px-[212px] flex flex-col items-center justify-center gap-2 lg:gap-6 shadow-md border-[#1b0f614e] lg:shadow-2xl">
 				<h1 className="text-white text-center text-2xl lg:text-[52px] font-bold lg:leading-[76px]">
 					Discover an exceptional cooking class tailored for you!
 				</h1>

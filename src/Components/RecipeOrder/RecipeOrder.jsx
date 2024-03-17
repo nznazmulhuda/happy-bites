@@ -10,15 +10,15 @@ function RecipeOrder({
 	totalCal,
 }) {
 	return (
-		<div className="col-span-12 lg:col-span-4">
-			<div className="border border-[#28282833] rounded-2xl pb-8 shadow-lg">
+		<div className="col-span-12 lg:col-span-5">
+			<div className="border bg-gray-100 border-[#1b0f614e] rounded-2xl pb-8 shadow-lg">
 				<h1 className="mt-8 text-[#282828] text-2xl font-semibold text-center">
 					Want to cook: {order.length}
 				</h1>
 
 				<div className="divider w-4/5 mx-auto mt-0"></div>
 
-				<div className="grid grid-cols-12 gap-3 lg:gap-0 px-3 lg:px-6">
+				<div className="grid grid-cols-12 gap-3 lg:gap-0 px-3 lg:px-6 items-center">
 					<div className="col-span-1"></div>
 
 					<h1 className="col-span-4 text-[#878787] text-[16px] font-medium font-fira">
@@ -33,7 +33,7 @@ function RecipeOrder({
 						Calories
 					</h1>
 
-					<div className="col-span-2"></div>
+					<div className="col-span-3"></div>
 				</div>
 
 				<div className="divider mx-auto w-4/5 mt-0 mb-0"></div>
@@ -85,7 +85,7 @@ function RecipeOrder({
 					</h1>
 
 					<h1 className="text-[#282828CC] text-sm lg:text-[16px] font-medium leading-7 col-span-3">
-						Total Calories = {totalCal} calories
+						Total Calories <br /> = {totalCal} calories
 					</h1>
 				</div>
 			</div>
@@ -99,6 +99,8 @@ RecipeOrder.propTypes = {
 	totalTime: PropTypes.number,
 	cooking: PropTypes.array,
 	totalCal: PropTypes.number,
+	quantity: PropTypes.number,
+	quan: PropTypes.number,
 };
 
 export default RecipeOrder;
